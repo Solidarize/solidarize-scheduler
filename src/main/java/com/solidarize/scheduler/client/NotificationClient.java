@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
-@FeignClient(url = "https://solidarize-notification-dev.herokuapp.com", name = "NotificationClient")
+@FeignClient(url = "${solidarize.notification.url}", name = "NotificationClient")
 @Component
 public interface NotificationClient {
 
